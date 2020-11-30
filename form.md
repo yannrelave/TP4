@@ -7,21 +7,48 @@ En pratique, des librairies comme [Formik](https://formik.org/) proposent une AP
 
 Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=/src/index.js) puis répondez aux questions.
 
-**1. Décrire le rôle de chaque fonction (une phrase par fonction).**
+**1. Décrire le rôle de chaque fonction (une phrase par fonction).**  
 
-**2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**
+- `validateEmail(value)` permet de vérifier que le text saisie correspond à une adresse mail, via le RegEx, et que le champs est saisie.
+- `validateName(name)` permet de vérifier qu'un nom a été saisie dans le champs.
+- `NameField({ name, setName })` permet d'afficher le message "Un nom est obligatoire" si le champs est vide via une condition ternaire, en appellant la fonction `validateName(name)`.  
+- `EmailField({ email, setEmail })` tout comme la fonction précédente, elle permet d'afficher le message "Une adresse email est obligatoire" si l'adresse mail ne respecte pas le RegEx de la fonction `validateEmail(value)`.  
+- `Inscription()` affiche le formulaire en vérifiant que le nom et l'adresse sont valides, si oui, au clic du bouton la fonction `submit()` est appelée et le compte est crée.
 
-**3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**
+**2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**  
 
-**4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**
+- States : ce sont les valeurs rentrées dans les inputs, ainsi que la valeur envoyée au clic du bouton. La valeur du nom et de l'adresse sont par défaut une chaine vide et celle envoyée par le bouton est initialisée à false.  
+- Props :
 
-**5. Peut-on transmettre une fonction dans un Props ?**
+**3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**  
 
-**6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**
+La variable `event` contient la valeur du champs "Nom", récupérée grâce au `event.target.value`.
 
-**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**
+**4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**  
 
-**8. Un composant a été designé avec `styled-components`. En s'aidant de la [documentation de cette librairie](https://styled-components.com/docs/basics#getting-started), expliquez en quoi consiste ce design.**
+L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparaitraient sur la page avant le message, car il n'y a pas le passage en JavaScript. 
+
+**5. Peut-on transmettre une fonction dans un Props ?**  
+
+Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte seulement des valeurs.
+
+**6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
+
+- 1 :  Appel de la fonction `NameField({ name, setName })`.
+- 2 :  Vérification que le champs n'est pas vide.
+- 3 :  Initialisation du formulaire et affichage du nom.
+- 4 :  Changement du nom dans son champs "nom".
+- 5 :  Appel de la fonction `setName()` et envoie de la valeur entrée avec la commande `event.target.value`.
+- 6 :  Modification de la valeur de la variable "name".
+- 7 : Affichage de la nouvelle valeur en direct.
+
+**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**  
+
+La regex pour valider un email vérifie que la saisie comporte des caractères minuscules, majuscules, spéciaux et meme des chiffres, suivis par un "@" et finissant par des des caractères minuscules ou majuscules ou des chiffres.
+
+**8. Un composant a été designé avec `styled-components`. En s'aidant de la [documentation de cette librairie](https://styled-components.com/docs/basics#getting-started), expliquez en quoi consiste ce design.**  
+
+Ce design consiste à utiliser plus simplement du style css en React. Ici il permet de mettre en forme le champs Input.
 
 ## Mini-projet : un timer
 
