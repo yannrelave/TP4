@@ -26,7 +26,9 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 
 L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparaitraient sur la page avant le message, car il n'y a pas le passage en JavaScript. 
 
-**5. Peut-on transmettre une fonction dans un Props ?**
+**5. Peut-on transmettre une fonction dans un Props ?**  
+
+Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte seulement des valeurs.
 
 **6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**
 
