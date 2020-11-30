@@ -32,7 +32,14 @@ L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparait
 
 Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte seulement des valeurs.
 
-**6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**
+**6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
+
+- 1.  Appel de la fonction `NameField({ name, setName })`.
+- 2.  Vérification que le champs n'est pas vide.
+- 3.  Initialisation du formulaire et affichage du nom.
+- 4.  Changement du nom dans son champs "nom".
+- 5.  Appel de la fonction `setName()` et envoie de la valeur entrée avec la commande `event.target.value`.
+- 6.  Modification de la valeur de la variable "name".
 
 **7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**
 
