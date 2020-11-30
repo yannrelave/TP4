@@ -30,7 +30,7 @@ L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparait
 
 **5. Peut-on transmettre une fonction dans un Props ?**  
 
-Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte seulement des valeurs.
+Oui, car par exemple le props `onChange` transmet la fonction `setName(event.target.value)`.
 
 **6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
 
