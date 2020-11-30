@@ -40,6 +40,7 @@ Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte se
 - 4.  Changement du nom dans son champs "nom".
 - 5.  Appel de la fonction `setName()` et envoie de la valeur entrée avec la commande `event.target.value`.
 - 6.  Modification de la valeur de la variable "name".
+- 7. Affichage de la nouvelle valeur en direct.
 
 **7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**
 
