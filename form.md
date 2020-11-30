@@ -15,7 +15,10 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 - `EmailField({ email, setEmail })` tout comme la fonction précédente, elle permet d'afficher le message "Une adresse email est obligatoire" si l'adresse mail ne respecte pas le RegEx de la fonction `validateEmail(value)`.  
 - `Inscription()` affiche le formulaire en vérifiant que le nom et l'adresse sont valides, si oui, au clic du bouton la fonction `submit()` est appelée et le compte est crée.
 
-**2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**
+**2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**  
+
+- States : ce sont les valeurs rentrées dans les inputs, ainsi que la valeur envoyée au clic du bouton. La valeur du nom et de l'adresse sont par défaut une chaine vide et celle envoyée par le bouton est initialisée à false.  
+- Props :
 
 **3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**
 
