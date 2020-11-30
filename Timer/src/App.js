@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import PropTypes from "prop-types";
+import "./styles.css";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
 
-function App() {
+function TimerField({ timer, setTimer }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Coucou</h1>
+    </>
   );
 }
 
-export default App;
+function Timer() {
+  let [timer, setTimer] = useState(0);
+
+  function startTimer() {
+    console.log("oui");
+    setInterval(alertFunc, 1000);
+  }
+
+  function alertFunc() {
+    setTimer((timer = timer + 1));
+  }
+
+  return (
+    <>
+      <div>
+        <label>
+          <TimerField timer={timer} setTimer={setTimer} />
+        </label>
+        <label>
+          <alertFunc />
+        </label>
+      </div>
+      <div>
+        <button onClick={() => startTimer()}>Lancer</button>
+      </div>
+      <div>{`Time : ${timer}`}</div>
+    </>
+  );
+}
+
+export default Timer;
