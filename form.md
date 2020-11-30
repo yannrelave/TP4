@@ -34,7 +34,7 @@ Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte se
 
 **6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
 
-- 1  Appel de la fonction `NameField({ name, setName })`.
+- 1:  Appel de la fonction `NameField({ name, setName })`.
 - 2  Vérification que le champs n'est pas vide.
 - 3.  Initialisation du formulaire et affichage du nom.
 - 4.  Changement du nom dans son champs "nom".
