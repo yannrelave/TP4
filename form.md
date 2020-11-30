@@ -42,7 +42,9 @@ Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte se
 - 6 :  Modification de la valeur de la variable "name".
 - 7 : Affichage de la nouvelle valeur en direct.
 
-**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**
+**7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**  
+
+La regex pour valider un email vérifie que la saisie comporte des caractères minuscules, majuscules, spéciaux et meme des chiffres, suivis par un "@" et finissant par des des caractères minuscules ou majuscules ou des chiffres.
 
 **8. Un composant a été designé avec `styled-components`. En s'aidant de la [documentation de cette librairie](https://styled-components.com/docs/basics#getting-started), expliquez en quoi consiste ce design.**
 
