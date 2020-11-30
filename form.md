@@ -46,7 +46,9 @@ Non, on ne peut transmettre une focntion dans un Props, car celui-ci comporte se
 
 La regex pour valider un email vérifie que la saisie comporte des caractères minuscules, majuscules, spéciaux et meme des chiffres, suivis par un "@" et finissant par des des caractères minuscules ou majuscules ou des chiffres.
 
-**8. Un composant a été designé avec `styled-components`. En s'aidant de la [documentation de cette librairie](https://styled-components.com/docs/basics#getting-started), expliquez en quoi consiste ce design.**
+**8. Un composant a été designé avec `styled-components`. En s'aidant de la [documentation de cette librairie](https://styled-components.com/docs/basics#getting-started), expliquez en quoi consiste ce design.**  
+
+Ce design consiste à utiliser plus simplement du style css en React. Ici il permet de mettre en forme le champs Input.
 
 ## Mini-projet : un timer
 
