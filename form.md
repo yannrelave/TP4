@@ -7,7 +7,9 @@ En pratique, des librairies comme [Formik](https://formik.org/) proposent une AP
 
 Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=/src/index.js) puis répondez aux questions.
 
-**1. Décrire le rôle de chaque fonction (une phrase par fonction).**
+**1. Décrire le rôle de chaque fonction (une phrase par fonction).**  
+
+`validateEmail(value)`
 
 **2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**
 
