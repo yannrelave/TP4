@@ -18,7 +18,7 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 **2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**  
 
 - States : ce sont les valeurs rentrées dans les inputs, ainsi que la valeur envoyée au clic du bouton. La valeur du nom et de l'adresse sont par défaut une chaine vide et celle envoyée par le bouton est initialisée à false.  
-- Props :
+- Props : name, setName, email, setEmail, onClick, disabled. La valeur par défaut de name est le state "name"
 
 **3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**  
 
