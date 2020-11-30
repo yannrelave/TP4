@@ -20,7 +20,9 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 - States : ce sont les valeurs rentrées dans les inputs, ainsi que la valeur envoyée au clic du bouton. La valeur du nom et de l'adresse sont par défaut une chaine vide et celle envoyée par le bouton est initialisée à false.  
 - Props :
 
-**3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**
+**3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**  
+
+La variable `event` contient la valeur du champs "Nom", récupérée grâce au `event.target.value`.
 
 **4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**  
 
