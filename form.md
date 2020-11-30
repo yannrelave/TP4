@@ -22,7 +22,9 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 
 **3. Que contient la variable `event` dans `onChange={(event) => setName(event.target.value)}`? Vous pouvez la scruter à l'aide de `console.log`.**
 
-**4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**
+**4. Pourquoi doit-on encapsuler un espace avec `{" "}` ?**  
+
+L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparaitraient sur la page avant le message, car il n'y a pas le passage en JavaScript. 
 
 **5. Peut-on transmettre une fonction dans un Props ?**
 
