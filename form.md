@@ -9,10 +9,10 @@ Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=
 
 **1. Décrire le rôle de chaque fonction (une phrase par fonction).**  
 
-`validateEmail(value)` permet de vérifier que le text saisie correspond à une adresse mail, via le RegEx, et que le champs est saisie.
-`validateName(name)` permet de vérifier qu'un nom a été saisie dans le champs.
-`NameField({ name, setName })` permet d'afficher le message 'Un nom est obligatoire' si le champs est vide via une condition ternaire, en appellant la fonction `validateName(name)`.  
-`EmailField({ email, setEmail })` tout comme la fonction précédente, elle permet d'afficher le message 'Une adresse email est obligatoire' si l'adresse mail ne respecte pas le RegEx de la fonction `validateEmail(value)`.
+- `validateEmail(value)` permet de vérifier que le text saisie correspond à une adresse mail, via le RegEx, et que le champs est saisie.
+- `validateName(name)` permet de vérifier qu'un nom a été saisie dans le champs.
+- `NameField({ name, setName })` permet d'afficher le message "Un nom est obligatoire" si le champs est vide via une condition ternaire, en appellant la fonction `validateName(name)`.  
+- `EmailField({ email, setEmail })` tout comme la fonction précédente, elle permet d'afficher le message "Une adresse email est obligatoire" si l'adresse mail ne respecte pas le RegEx de la fonction `validateEmail(value)`.
 
 **2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**
 
