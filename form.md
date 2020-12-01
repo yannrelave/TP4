@@ -33,14 +33,13 @@ L'espace permet d'espacer le input et le texte. Sans les `{}`, les `""` apparait
 Oui, car par exemple le props `onChange` transmet la fonction `setName(event.target.value)`.
 
 **6. Précisez étape par étape ce que fait React lorsque le champ nom est modifié.**  
-
-- 1 :  Appel de la fonction `NameField({ name, setName })`.
-- 2 :  Vérification que le champs n'est pas vide.
-- 3 :  Initialisation du formulaire et affichage du nom.
-- 4 :  Changement du nom dans son champs "nom".
-- 5 :  Appel de la fonction `setName()` et envoie de la valeur entrée avec la commande `event.target.value`.
-- 6 :  Modification de la valeur de la variable "name".
-- 7 : Affichage de la nouvelle valeur en direct.
+- 1 : Modification du champs nom (sur l'interface graphique).
+- 2 : Déclenchement du props "onChange", et appel de la fonction fléchée contenue dans celui-ci.
+- 3 : Détection de "setName()".
+- 4 : Recherche de l'appel de "setName", présent à la ligne 77.
+- 5 : Initialisation du state "name" qui prend la valeur de "setName" (ligne 64).
+- 6 : Retour du formulaire, mais découverte d'un changement de valeur (ligne 77).
+- 7 : Appel de la fonction "nameField" où la valeur "name" du "input" est modifiée.
 
 **7. Expliquez la regex pour valider un email. Vous pouvez la recopier dans regex101.com pour vous aider.**  
 
